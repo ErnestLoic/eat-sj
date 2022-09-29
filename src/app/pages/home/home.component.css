@@ -1,0 +1,65 @@
+i{
+    padding: 5px;
+}
+.button1{
+    background-color: var(--brown-color);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 0.35em;
+    margin-left: 10px;
+}.button1:hover{
+    background-color: var(--green-color);
+}
+
+.button2{
+    background-color: var(--brown-color);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+}.button2:hover{
+    background-color: var(--green-color);
+}
+
+h3{
+    padding: 5%;
+    color: var(--brown-color);
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+h1{
+    color: var(--brown-color);
+    font-weight: bold;
+}
+
+p{
+    color: var(--brown-color);
+}
+
+.herotitle{
+    margin-top: 70%;
+    padding: 10%;
+}
+
+img[alt="illustration"]{  
+    width: 70%;
+}
+
+span{
+    color: var(--green-color);
+}
+
+.cont{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contenu{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.rec{
+    padding: 50px;
+}
+

@@ -1,0 +1,90 @@
+<div class="container py-5">
+    <!-- For Demo Purpose-->
+    <header class="text-center mb-5">
+      <h1 class="display-4 font-weight-bold">Nos menus</h1>
+      <p class="font-italic text-muted mb-0">Faites votre choix parmi la variété de plats proposés par nos vendeurs</p>
+    </header>
+  
+  
+    <!-- First Row [Prosucts]-->
+    <!-- <h2 class="font-weight-bold mb-2">Plats du jour</h2> -->
+    
+  
+    <div class="row pb-5 mb-4">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" *ngFor="let p of platData">
+        <!-- Card-->
+        <div class="card rounded shadow-lg border-0 mt-3">
+          <div class="card-body p-4"><img src="{{p.img}}" alt="" class="img-fluid d-block mx-auto mb-3">
+            <h5>
+                {{p.nom}}
+                    <ul class="list-inline small">
+                        <li class="list-inline-item m-0"><i class="bi bi-star-fill"></i></li>
+                        <li class="list-inline-item m-0"><i class="bi bi-star-fill"></i></li>
+                        <li class="list-inline-item m-0"><i class="bi bi-star"></i></li>
+                        <li class="list-inline-item m-0"><i class="bi bi-star"></i></li>
+                        <li class="list-inline-item m-0"><i class="bi bi-star"></i></li>
+                      </ul>
+            </h5>
+            <p class="small text-muted font-italic"><i class="bi bi-person"></i> {{p.vendeur}}</p>
+            <p class="small text-muted font-italic">Petite Faim: {{p.petiteFaim}}</p>
+            <p class="small text-muted font-italic">Standard: {{p.standard}}</p>
+            <p class="small text-muted font-italic">Grande Faim: {{p.grandeFaim}}</p>
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content  border-0">
+                    <div class="modal-header border-0">
+                      <!-- <h5 class="modal-title" id="exampleModalToggleLabel"></h5> -->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                            <form>
+                            <div class="mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Choissisez une formule</option>
+                                    <option value="1">Petite Faim</option>
+                                    <option value="2">Standard</option>
+                                    <option value="3">Grande Faim</option>
+                                  </select>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Avec boisson</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Sans boisson</label>
+                                  </div>
+                            </div>
+                            </form>
+                    </div>
+                    <div class="modal-footer  border-0">
+                      <button class="btn button2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn button2" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Commander</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  

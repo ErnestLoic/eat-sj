@@ -1,0 +1,26 @@
+.button1{
+    background-color: var(--brown-color);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+}
+.button1:hover{
+    background-color: var(--green-color);
+}
+.button2{
+    border: none;
+}
+nav{
+    font-size: smaller;
+}
+
+.active-link{
+    color:  var(--brown-color);
+}
+a:hover{
+    color: var(--green-color);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:  var(--brown-color);
+}

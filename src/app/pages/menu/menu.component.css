@@ -1,0 +1,25 @@
+/* body {
+    min-height: 100vh;
+    background: #fafafa;
+  } */
+
+a,h1,h2,h3,h4,h5,h6,p{
+    color: var(--brown-color);
+} 
+
+i[class="bi bi-star-fill"]{
+    color:rgb(255, 208, 0);
+}
+input,select{
+    border: solid 1px var(--green-color);
+}
+
+.button2{
+    background-color: var(--green-color);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    width: 100%;
+}.button2:hover{
+    background-color: var(--brown-color);
+}

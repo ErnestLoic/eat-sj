@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --green-color: #a0dc5a;
+    --brown-color:  #674a2a;
+    --cream-color: #FEF8E2;
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+} 
+
